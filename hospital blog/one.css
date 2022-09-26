@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 1s;
+
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color:white;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    height: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+}
+
+nav .logo{
+    width: 80px;
+} 
+nav .logo :hover{
+    cursor: pointer;
+    
+}
+.nav-bar{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+
+}
+.nav-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    
+
+}
+.nav-bar ul li{
+width: 130px;
+margin: 15px;
+height: 30px;
+
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+ul li :hover{
+    background-color: #5bcaf7;
+    cursor: pointer;
+    border-bottom: 5px solid white;
+}
+.hero-nav{
+    padding: 300px;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 75px;
+    
+
+}
+.hero-nav h1{
+    background-color: #000;
+    text-align: center;
+    font-size: 6rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 20px;
+}
+.hero-nav h4{
+    background-color: #000;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.hero-nav p{
+    background-color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.services-section{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 100px;
+    background-color: grey;
+}  
+.services-section h1, p{
+    text-align: center;
+    line-break: 2px;
+    
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background-color: #000;
+}
+.about-section h1, p{
+    text-align: center;
+}
+
+.more-content{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: grey;
+
+}
+.more-content h3 {
+    text-align: center;
+    margin: 1px;
+}
+.more-content p{
+display: flex;
+margin: 2px;
+
+}
+.all-sections{
+border: 1px solid #000;
+margin:20px;
+padding: 100px;
+}
+
+.more-content :hover{
+    background-color: grey;
+}
+.footer{ 
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 90px;
+    background-color:grey;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.footer-span{
+    display: flex;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 1px;
+    padding-top: 2.5px;
+   
+}
+.footer-header{
+    display: block;
+    justify-items: center;
+    text-align: center;
+    margin-top: 3px;
+    padding-bottom: 10px;
+}
+.footer-header h1{
+    text-align: center;
+    text-decoration: none;
+    padding:2px;
+
+}
+.section__title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    
+}
+.gallery-section{
+    display: flex;
+    padding: 60px;
+    width: 100%;
+    margin: 2rem auto;
+    background-color: #000;
+   
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4"
+    "img5 img6";
+    grid-gap: 1.5rem; 
+    
+    
+    
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.gallery__item--1{
+    grid-area: 1mg1;
+}
+
+
+
+@media only screen and (max-width:480px){
+    .hero-nav{
+        display: grid;
+        justify-content: center;
+        text-align: center;   
+    }
+    .hero-nav h1{
+        display: flex;
+    }
+    .hero-nav h4{
+        display: flex;
+    }
+    .hero-nav p{
+        display: flex;
+    }   
+    .nav-bar {
+        display: inline-block;
+    }
+    .nav-bar ul{
+        display: inline-block;
+        padding: auto;
+    }
+    header{
+        display: block;
+        justify-content: center;
+        height: 5px;
+    }
+    body{
+        display: block;
+    }
+    .section-title{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .section-title h1, p{
+        text-align: center;
+        font-size: large;
+        width: 100px;
+    }
+    .more-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .more-content h3{
+        display: flex;
+    }
+    .more-content p{
+        display: flex;
+    }
+    .all-sections{
+        display: flex;
+        flex-direction: column;
+    }
+}
